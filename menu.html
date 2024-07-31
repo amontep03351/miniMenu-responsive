@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sticky Header and Footer</title>
+    <title>MiNiMenu</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="menu.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+     
 </head>
 <body>
     <div class="container">
@@ -18,11 +24,11 @@
         </header>
         <main>
             <div class="top-half">
-                <div class="card">
-                    <img src="img1.jpg" alt="Large Menu Image">
+                <div class="card animate__animated animate__bounceIn">
+                   <center><img src="images.png" id="show_img" alt="Large Menu Image"></center> 
                     <div class="card-content">
-                        <h2>ชื่อเมนูใหญ่</h2>
-                        <p>คำบรรยายเพิ่มเติมเกี่ยวกับเมนูนี้</p>
+                        <h2 id="show_menu">Rendom ADS</h2>
+                        <p id="show_price">ADS detail</p>
                     </div>
                 </div>
             </div>
@@ -38,82 +44,59 @@
                     </ul>
                 </nav>
                 <div class="menu-list">
-                    <div class="menu-item">
-                        <span class="item-name">แกงเขียวหวาน</span>
-                        <span class="item-price">฿100</span>
+                    <div class="menu-item" onclick="function_select_item(1);">
+                        <span class="item-name"  id="item-name1">แกงเขียวหวาน</span>
+                        <span class="item-price" id="item-price1">฿100</span>
+                        <input type="hidden" id="item-img1" value="menu1.jpg">
                     </div>
-                    <div class="menu-item">
-                        <span class="item-name">ต้มยำกุ้ง</span>
-                        <span class="item-price">฿120</span>
+                    <div class="menu-item" onclick="function_select_item(2);">
+                        <span class="item-name" id="item-name2">ต้มยำกุ้ง</span>
+                        <span class="item-price" id="item-price2">฿120</span>
+                        <input type="hidden" id="item-img2" value="menu2.jpg">
                     </div>
-                    <div class="menu-item">
-                        <span class="item-name">ทอดมันปลากราย</span>
-                        <span class="item-price">฿80</span>
+                    <div class="menu-item" onclick="function_select_item(3);">
+                        <span class="item-name" id="item-name3">ทอดมันปลากราย</span>
+                        <span class="item-price" id="item-price3">฿80</span>
+                        <input type="hidden" id="item-img3" value="menu3.jpg">
                     </div>
-                    <div class="menu-item">
-                        <span class="item-name">แกงเขียวหวาน</span>
-                        <span class="item-price">฿100</span>
+                    <div class="menu-item" onclick="function_select_item(1);">
+                        <span class="item-name"  id="item-name1">แกงเขียวหวาน</span>
+                        <span class="item-price" id="item-price1">฿100</span>
+                        <input type="hidden" id="item-img1" value="menu1.jpg">
                     </div>
-                    <div class="menu-item">
-                        <span class="item-name">ต้มยำกุ้ง</span>
-                        <span class="item-price">฿120</span>
+                    <div class="menu-item" onclick="function_select_item(2);">
+                        <span class="item-name" id="item-name2">ต้มยำกุ้ง</span>
+                        <span class="item-price" id="item-price2">฿120</span>
+                        <input type="hidden" id="item-img2" value="menu2.jpg">
                     </div>
-                    <div class="menu-item">
-                        <span class="item-name">ทอดมันปลากราย</span>
-                        <span class="item-price">฿80</span>
+                    <div class="menu-item" onclick="function_select_item(3);">
+                        <span class="item-name" id="item-name3">ทอดมันปลากราย</span>
+                        <span class="item-price" id="item-price3">฿80</span>
+                        <input type="hidden" id="item-img3" value="menu3.jpg">
                     </div>
-                    <div class="menu-item">
-                        <span class="item-name">ทอดมันปลากราย</span>
-                        <span class="item-price">฿80</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="item-name">ทอดมันปลากราย</span>
-                        <span class="item-price">฿80</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="item-name">ทอดมันปลากราย</span>
-                        <span class="item-price">฿80</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="item-name">ทอดมันปลากราย</span>
-                        <span class="item-price">฿80</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="item-name">ทอดมันปลากราย</span>
-                        <span class="item-price">฿80</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="item-name">ทอดมันปลากราย</span>
-                        <span class="item-price">฿80</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="item-name">ทอดมันปลากราย</span>
-                        <span class="item-price">฿80</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="item-name">ทอดมันปลากราย</span>
-                        <span class="item-price">฿80</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="item-name">ทอดมันปลากราย</span>
-                        <span class="item-price">฿80</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="item-name">ทอดมันปลากราย</span>
-                        <span class="item-price">฿80</span>
-                    </div>
-                    
-                    
+ 
                     <!-- เพิ่มเมนูอื่น ๆ ที่นี่ -->
                 </div>
             </div>
             
         </main>
         <footer>
-            <div class="sum">รวม : 100 บาท</div>
+            <div class="sum">รวม :   บาท</div>
              
             <div class="divbtnsend"><button class="btnsend">ส่งรายการ</button></div>
         </footer>
     </div>
+    <script>
+
+    $(document).ready(function() {
+       
+    });
+    function function_select_item(item){
+        
+        $("#show_menu").html($("#item-name"+item).html());
+        $("#show_price").html($("#item-price"+item).html()); 
+        $("#show_img").attr("src",$("#item-img"+item).val());
+    }
+    </script>
 </body>
 </html>
