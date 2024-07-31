@@ -32,7 +32,7 @@ body {
 }
 
 header {
-    background-color: #f11010; /* สีส้ม */
+    background-color: #ff1010; /* สีส้ม */
     color: #ffffff;
     padding: 10px 20px;
     display: flex;
@@ -58,7 +58,7 @@ main {
     justify-content: center; 
     align-items: center;
     border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 0px solid #ccc;
     background-color: #00000056;
     
     
@@ -98,8 +98,8 @@ main {
     flex: 1;
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid #ccc;
-    background-color: #ffffff;
+    border-bottom: 0px solid #00000056;
+    background-color: #00000056;
     overflow: hidden;
     padding: 5px;
 }
@@ -107,9 +107,9 @@ main {
     flex: 0 0 20%; /* 20% of the bottom-half */
     display: flex;
     justify-content: center;
-     
+    padding-left: 40%;
     align-items: center;
-    background-color: #f11010;
+    background-color: #ff1010;
     overflow-x: auto; /* Enable horizontal scrolling */
     overflow-y: hidden; /* Prevent vertical scrolling */
     white-space: nowrap; /* Prevent items from wrapping */
@@ -180,7 +180,7 @@ main {
     font-size: 12px;
 }
 footer {
-    background-color: #f11010; /* สีส้ม */
+    background-color: #ff1010; /* สีส้ม */
     color: #ffffff;
     padding:8px 10px;
     display: flex;
@@ -198,11 +198,11 @@ footer {
     background-color: #00d9ff; /* สีพื้นหลังของปุ่ม */
     border: none; /* ไม่มีเส้นขอบ */
     color: rgb(0, 0, 0); /* สีข้อความ */
-    padding: 12px 24px; /* ระยะห่างภายในปุ่ม */
+    padding: 8px 20px; /* ระยะห่างภายในปุ่ม */
     text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
     text-decoration: none; /* ไม่มีการขีดเส้นใต้ข้อความ */
     display: inline-block; /* แสดงปุ่มเป็นบล็อกในบรรทัดเดียว */
-    font-size: 16px; /* ขนาดของข้อความ */
+    font-size: 20px; /* ขนาดของข้อความ */
     border-radius: 5px; /* มุมของปุ่มโค้งมน */
     cursor: pointer; /* แสดงรูปแบบมือเมื่อเลื่อนเมาส์ */
     transition: background-color 0.3s, transform 0.3s; /* เอฟเฟกต์เปลี่ยนสีพื้นหลังและการขยายปุ่ม */
@@ -219,7 +219,7 @@ button:focus {
 } 
 /* Active effect */
 button:active {
-    background-color: #e07b00; /* สีพื้นหลังเมื่อคลิกปุ่ม */
+    background-color: #FFA500; /* สีพื้นหลังเมื่อคลิกปุ่ม */
     transform: scale(0.98); /* ลดขนาดปุ่มเมื่อกด */
 }
 /* Responsive Design */
