@@ -75,11 +75,10 @@ main {
 }
 
 .card img {
-    padding-top: 10px;
-    width: 60%;
-    height: 50%; 
-    width: 350px;
-    height: 350px;
+    padding-top: 10px; 
+    width: 250px;
+    height: 250px;
+    border-radius: 150px;
     display: block;
 }
 
@@ -107,7 +106,7 @@ main {
     padding: 5px;
 }
 .menu {
-    flex: 0 0 20%; /* 20% of the bottom-half */
+    flex: 0 0 25%; /* 20% of the bottom-half */
     display: flex;
     justify-content: center;
     padding-left: 40%;
@@ -239,7 +238,7 @@ button:active {
 @media (max-width: 480px) {
     .menu {
         flex: 0 0 15%; /* Further adjust width for very small screens */
-        height: 50px; /* Adjust height for very small screens */
+        height: 60px; /* Adjust height for very small screens */
     }
 
     .menu-list {
