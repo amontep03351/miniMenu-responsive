@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Food</title>
+    <link rel="stylesheet" href="page1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>เริ่มต้นสั่งอาหาร</h1>
+            <p>กรุณาเลือกวิธีการเข้าสู่ระบบ:</p>
+            <div class="options">
+                <button id="scan-qr">สแกน QR Code</button>
+                <button id="enter-code">ใส่รหัสร้านค้า</button>
+            </div>
+            <div class="input-section" id="enter-code-section" style="display:none;">
+                <input type="text" id="store-code" placeholder="กรอกรหัสร้านค้า">
+                <button id="submit-code">ยืนยัน</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('scan-qr').addEventListener('click', function() {
+            // Implement QR code scanning functionality here
+            alert('QR Code scanning not implemented.');
+        });
+
+        document.getElementById('enter-code').addEventListener('click', function() {
+            document.getElementById('enter-code-section').style.display = 'block';
+        });
+
+        document.getElementById('submit-code').addEventListener('click', function() {
+            // Implement store code submission functionality here
+            alert('Store code submission not implemented.');
+        });
+    </script>
+</body>
+</html>
