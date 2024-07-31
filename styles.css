@@ -1,253 +1,198 @@
 /* styles.css */
 
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-}
-
+/* General reset */
 body {
-  
-    font-family: "Noto Sans Thai", sans-serif;
-    line-height: 1.6;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-    max-width: 600px;
-    
-}
-
-header {
-    background-color: #ff1010; /* สีส้ม */
-    color: #ffffff;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-shrink: 0;
-}
-
-.logo, .user-icon {
-    flex: 0 0 auto;
-}
-
-main {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    height: 0px;
-}
-
-.top-half {
-    flex: 1;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    border-top: 1px solid #ccc;
-    border-bottom: 0px solid #ccc;
-    background-color: #00000056;
-    
-    
-}
-.card {
-    position: relative;
-    width: 90%;
-     
-    max-width: 500px;
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.card-content {
-    padding: 0px;
-    text-align: center;
-}
-
-.card-content h2 {
-    margin: 10px 0;
-    font-size: 1.5em;
-}
-
-.card-content p {
-    font-size: 1em;
-    color: #666;
-}
-.bottom-half {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    border-bottom: 0px solid #00000056;
-    background-color: #00000056;
-    overflow: hidden;
-    padding: 5px;
-}
-.menu {
-    flex: 0 0 20%; /* 20% of the bottom-half */
-    display: flex;
-    justify-content: center;
-    padding-left: 40%;
-    align-items: center;
-    background-color: #ff1010;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    overflow-y: hidden; /* Prevent vertical scrolling */
-    white-space: nowrap; /* Prevent items from wrapping */
-    height: 50px; /* Set a fixed height */
-    border-radius: 15px;
-}
-
-.menu ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
     margin: 0;
-}
-
-.menu li {
-    margin: 10px;
-}
-.menu a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    display: inline-block; /* Ensure links do not stretch */
-}
-
-.menu a:hover {
-    background-color: #ccc;
-}
-/* Menu list styling */
-.menu-list {
-    flex: 1; /* 80% of the bottom-half */
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 1fr; /* One column layout */
-    gap: 10px;
-    overflow-y: auto; /* Enable vertical scrolling */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    max-height: calc(100vh - 50px); /* Adjust this if needed */
-}
-
-.menu-item {
-    position: relative;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.item-name {
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.item-price {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #FFA500;
-    color: #fff;
-    padding: 3px 6px;
-    border-radius: 3px;
-    font-weight: bold;
-    font-size: 12px;
-}
-footer {
-    background-color: #ff1010; /* สีส้ม */
-    color: #ffffff;
-    padding:8px 10px;
-    display: flex;
-    font-size: 20px;
-    align-items: center;
-    justify-content: space-between;
-    flex-shrink: 0;
-}
-.sum, .divbtnsend {
-    flex: 0 0 auto;
-}
-
-.btnsend {
+    padding: 0;
     font-family: "Noto Sans Thai", sans-serif;
-    background-color: #00d9ff; /* สีพื้นหลังของปุ่ม */
-    border: none; /* ไม่มีเส้นขอบ */
-    color: rgb(0, 0, 0); /* สีข้อความ */
-    padding: 8px 20px; /* ระยะห่างภายในปุ่ม */
-    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
-    text-decoration: none; /* ไม่มีการขีดเส้นใต้ข้อความ */
-    display: inline-block; /* แสดงปุ่มเป็นบล็อกในบรรทัดเดียว */
-    font-size: 20px; /* ขนาดของข้อความ */
-    border-radius: 5px; /* มุมของปุ่มโค้งมน */
-    cursor: pointer; /* แสดงรูปแบบมือเมื่อเลื่อนเมาส์ */
-    transition: background-color 0.3s, transform 0.3s; /* เอฟเฟกต์เปลี่ยนสีพื้นหลังและการขยายปุ่ม */
 }
-/* Hover effect */
-button:hover {
-    background-color: #00d9ff; /* สีพื้นหลังเมื่อเลื่อนเมาส์ไปที่ปุ่ม */
-    transform: scale(1.05); /* ขยายขนาดปุ่มเมื่อเลื่อนเมาส์ไปที่ปุ่ม */
-}
-/* Focus effect */
-button:focus {
-    outline: none; /* ไม่มีเส้นขอบเมื่อปุ่มถูกเลือก */
-    box-shadow: 0 0 5px rgba(0,0,0,0.2); /* เงาล้อมรอบปุ่มเมื่อมีการโฟกัส */
-} 
-/* Active effect */
-button:active {
-    background-color: #FFA500; /* สีพื้นหลังเมื่อคลิกปุ่ม */
-    transform: scale(0.98); /* ลดขนาดปุ่มเมื่อกด */
-}
-/* Responsive Design */
-@media (max-width: 768px) {
-    .menu {
-        flex: 0 0 15%; /* Adjust width for smaller screens */
-        height: 60px; /* Adjust height for smaller screens if needed */
-    }
 
-    .menu-list {
-        max-height: calc(100vh - 60px); /* Adjust for smaller screens */
-    }
+/* Container styling */
+.welcome {
+    position: relative; /* Make this section a containing block for the logo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background: linear-gradient(135deg, #FFA500, #FF6347); /* Gradient background */
+    color: white;
+    text-align: center;
+    padding: 0px;
 }
+
+.logo {
+    position: absolute;
+    top: 20px; /* Distance from the top edge */
+    right: 20px; /* Distance from the right edge */
+}
+
+.logo img {
+    max-width: 80px; /* Adjust the size of the logo */
+    height: auto;
+}
+
+.content {
+    z-index: 1; /* Ensure content is on top of the logo */
+}
+ 
+.welcome h1 { 
+    font-family: 'Noto Sans Thai', cursive, sans-serif; /* Fun and playful font */
+    font-size: 9em; /* Adjusted font size for mobile */
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Adding shadow for depth */
+}
+
+.welcome p {
+    font-family: "Noto Sans Thai", sans-serif; 
+    font-size: 1em; /* Adjusted font size for mobile */
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Button styling */
+.buttons {
+    margin-top: 20px; /* Space between the content and buttons */
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 1em;
+    border-radius: 25px; /* Rounded corners */
+    text-decoration: none;
+    color: white;
+    background-color: #007bff; /* Default button color */
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.order-btn {
+    background-color: #28a745; /* Green color for the order button */
+}
+
+.shop-btn {
+    background-color: #dc3545; /* Red color for the shop button */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker color on hover */
+    transform: translateY(-3px); /* Slightly lift the button */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+.btn:active {
+    background-color: #004494; /* Even darker color when clicked */
+    transform: translateY(1px); /* Slightly depress the button */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+}
+/* Modal styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    
+    background-color: rgba(255, 255, 255, 0); /* Black with opacity */
+}
+
+.modal-content {
+    background: linear-gradient(15deg, #ffffff, #e4e3e3); /* Gradient background */
+
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 500px; /* Maximum width of modal */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal h2 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 1.2em;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: "Noto Sans Thai", sans-serif;
+}
+
+.submit-btn {
+    font-family: "Noto Sans Thai", sans-serif;
+    background-color: #007bff; /* Blue color for submit button */
+    border: none;
+    padding: 14px 28px;
+    font-size: 1em;
+    color: white;
+    border-radius: 25px; /* Rounded corners */
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3; /* Darker color on hover */
+    transform: translateY(-3px); /* Slightly lift the button */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+.submit-btn:active {
+    background-color: #004494; /* Even darker color when clicked */
+    transform: translateY(1px); /* Slightly depress the button */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+}
+
+
+/* Responsive design */
 @media (max-width: 480px) {
-    .menu {
-        flex: 0 0 15%; /* Further adjust width for very small screens */
-        height: 50px; /* Adjust height for very small screens */
+    .logo img {
+        max-width: 60px; /* Smaller logo for smaller screens */
     }
 
-    .menu-list {
-        max-height: calc(100vh - 50px); /* Adjust for very small screens */
+    .welcome h1 {
+        font-size: 1.5em;
     }
 
-    .item-name {
-        font-size: 12px; /* Adjust font size for very small screens */
+    .welcome p {
+        font-size: 0.9em;
     }
 
-    .item-price {
-        font-size: 10px; /* Adjust font size for very small screens */
+    .btn {
+        padding: 12px 24px; /* Adjust button size for mobile */
+        font-size: 0.9em;
     }
 }

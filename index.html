@@ -1,119 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sticky Header and Footer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+    <title>MiNiMenu</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="logo">MiNiMenu : ร้าน มอส อร่อย หงายหลัง</div>
-             
-            <div class="user-icon">เลือก</div>
-        </header>
-        <main>
-            <div class="top-half">
-                <div class="card">
-                    <img src="img1.jpg" alt="Large Menu Image">
-                    <div class="card-content">
-                        <h2>ชื่อเมนูใหญ่</h2>
-                        <p>คำบรรยายเพิ่มเติมเกี่ยวกับเมนูนี้</p>
-                    </div>
-                </div>
+    <section class="welcome">
+    
+        <div class="content animate__animated animate__bounceIn">
+            <h1>ยินดีต้อนรับสู่ MiNiMenu!</h1>
+            <p>สั่งอาหารที่คุณชื่นชอบได้ง่ายๆ เพียงไม่กี่คลิก</p>
+            <div class="buttons">
+                <a href="#" class="btn order-btn" id="orderButton">สั่งอาหาร</a> 
             </div>
-            <div class="bottom-half">
-                <nav class="menu">
-                    <ul>  
-                        <li><a href="#">ต้ม</a></li>
-                        <li><a href="#">ผัด</a></li>
-                        <li><a href="#">แกง</a></li>
-                        <li><a href="#">ทอด</a></li>
-                        <li><a href="#">เครื่องดื่ม</a></li> 
-                        <li><a href="#">เมนูพิเศษ</a></li>
-                    </ul>
-                </nav>
-                <div class="menu-list">
-                    <div class="menu-item">
-                        <span class="item-name">แกงเขียวหวาน</span>
-                        <span class="item-price">฿100</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="item-name">ต้มยำกุ้ง</span>
-                        <span class="item-price">฿120</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="item-name">ทอดมันปลากราย</span>
-                        <span class="item-price">฿80</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="item-name">แกงเขียวหวาน</span>
-                        <span class="item-price">฿100</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="item-name">ต้มยำกุ้ง</span>
-                        <span class="item-price">฿120</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="item-name">ทอดมันปลากราย</span>
-                        <span class="item-price">฿80</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="item-name">ทอดมันปลากราย</span>
-                        <span class="item-price">฿80</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="item-name">ทอดมันปลากราย</span>
-                        <span class="item-price">฿80</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="item-name">ทอดมันปลากราย</span>
-                        <span class="item-price">฿80</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="item-name">ทอดมันปลากราย</span>
-                        <span class="item-price">฿80</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="item-name">ทอดมันปลากราย</span>
-                        <span class="item-price">฿80</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="item-name">ทอดมันปลากราย</span>
-                        <span class="item-price">฿80</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="item-name">ทอดมันปลากราย</span>
-                        <span class="item-price">฿80</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="item-name">ทอดมันปลากราย</span>
-                        <span class="item-price">฿80</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="item-name">ทอดมันปลากราย</span>
-                        <span class="item-price">฿80</span>
-                    </div>
-                    <div class="menu-item">
-                        <span class="item-name">ทอดมันปลากราย</span>
-                        <span class="item-price">฿80</span>
-                    </div>
-                    
-                    
-                    <!-- เพิ่มเมนูอื่น ๆ ที่นี่ -->
-                </div>
-            </div>
-            
-        </main>
-        <footer>
-            <div class="sum">รวม : 100 บาท</div>
-             
-            <div class="divbtnsend"><button class="btnsend">ส่งรายการ</button></div>
-        </footer>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal animate__animated animate__fadeInDown" id="orderModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>กรุณาใส่รหัสร้านค้า</h2>
+            <form id="orderForm" action="menu.html">
+                <label for="storeCode">รหัสร้านค้า:</label>
+                <input type="text" id="storeCode" name="storeCode" required>
+                <button type="submit" class="btn submit-btn" id="shopButton">เริ่ม</button>
+            </form>
+        </div>
     </div>
+      
+    <script src="script.js"></script>
 </body>
 </html>
