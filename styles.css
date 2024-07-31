@@ -65,7 +65,8 @@ main {
 }
 .card {
     position: relative;
-    width: 99%;
+    width: 90%;
+     
     max-width: 500px;
     background-color: #fff;
     border-radius: 10px;
